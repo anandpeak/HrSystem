@@ -11,7 +11,8 @@ import './charts/ChartjsConfig';
 
 // Import pages
 import Dashboard from './pages/Dashboard';
-import Test from './pages/Test';
+import Test from './pages/games/Test';
+import Switch from './pages/games/Switch';
 
 function App() {
 
@@ -25,9 +26,10 @@ function App() {
 
   return (
     <>
-      <Routes>
+      <Routes >
         <Route exact path="/" element={<Dashboard />} />
-        <Route path="/unity/:id/test"  element={<Test />} />
+        <Route exact path="/game/:id/test"  element={<Test />} />
+        <Route exact path="/game/:id/switch" element = {<Switch/>} />
       </Routes>
     </>
   );

@@ -13,7 +13,7 @@
 } */
 
 .unity-wrapper{
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
   
   .loading-overlay {
@@ -45,9 +45,9 @@
   .unity-canvas {
     position: absolute;
     top: 0px;
-    left: 100px;
-    width: 50%;
-    height: 50%;
+    /* left: 100px; */
+    width: 100%;
+    height: 100%;
   
   }
   
