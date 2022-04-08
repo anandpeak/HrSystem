@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function WelcomeBanner() {
   return (
@@ -49,7 +50,7 @@ function WelcomeBanner() {
       {/* Content */}
       <div className="relative">
         <h1 className="text-2xl md:text-3xl text-slate-800 font-bold mb-1">Good afternoon, Acme Inc. 👋</h1>
-        <p>Here is what’s happening with your projects today:</p>
+        <Link to="/game/123/test"> <p>Here is what’s happening with your projects today:</p></Link> 
       </div>
 
     </div>

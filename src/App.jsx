@@ -30,6 +30,7 @@ function App() {
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/game/:id/test"  element={<Test />} />
         <Route exact path="/game/:id/switch" element = {<Switch/>} />
+        
       </Routes>
     </>
   );
