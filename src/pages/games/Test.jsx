@@ -49,7 +49,7 @@ function Test() {
         </h6>
       </div>
     </Fragment>
-    : <Navigate to="/game/123/memory" replace={true}  />
+    : <Navigate to="/game/123/switch" replace={true}  />
   );
 }
 
