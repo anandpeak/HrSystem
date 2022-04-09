@@ -13,6 +13,8 @@ import './charts/ChartjsConfig';
 import Dashboard from './pages/Dashboard';
 import Test from './pages/games/Test';
 import Switch from './pages/games/Switch';
+import Arrow from './pages/games/Arrow';
+import Bottle from './pages/games/Bottle';
 
 function App() {
 
@@ -30,7 +32,10 @@ function App() {
         <Route exact path="/" element={<Dashboard />} />
         <Route exact path="/game/:id/test"  element={<Test />} />
         <Route exact path="/game/:id/switch" element = {<Switch/>} />
-        
+        <Route exact path="/game/:id/arrow" element = {<Arrow/>} />
+        <Route exact path="/game/:id/bottle" element = {<Bottle/>} />
+
+
       </Routes>
     </>
   );
