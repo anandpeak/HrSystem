@@ -19,8 +19,10 @@ function Test() {
 
   useEffect(function () {
     unityContext.on("GameOver1", function (username, score) {
+
       console.log("QUITTED = " + username);
       console.log("YEAHHHH", score);
+      
       // return <Redirect to='/game/:id/switch'/>;
 
       // window.location.href = "/game/:id/switch"
