@@ -15,6 +15,8 @@ import Test from './pages/games/Test';
 import Switch from './pages/games/Switch';
 import Arrow from './pages/games/Arrow';
 import Bottle from './pages/games/Bottle';
+import TestRoute from './pages/games/TestRoute';
+import Team from './pages/games/Team';
 
 function App() {
 
@@ -34,7 +36,8 @@ function App() {
         <Route exact path="/game/:id/switch" element = {<Switch/>} />
         <Route exact path="/game/:id/arrow" element = {<Arrow/>} />
         <Route exact path="/game/:id/bottle" element = {<Bottle/>} />
-
+        <Route exact path="/game/:id/abs" element = {<TestRoute/>} />
+        <Route exact path="/game/:id/team" element = {<Team/>} />
 
       </Routes>
     </>
