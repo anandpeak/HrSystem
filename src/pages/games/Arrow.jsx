@@ -18,7 +18,7 @@ function Arrow() {
   const [change, setChange] = useState(false);
 
   useEffect(function () {
-    unityContext.on("GameOverMeta", function (result) {
+    unityContext.on("GameOver1", function (result) {
       console.log("result = ", result);
       //   console.log("QUITTED = " + username);
       //   console.log("YEAHHHH", score);

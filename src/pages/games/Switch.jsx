@@ -9,18 +9,18 @@ const unityContext = new UnityContext({
   productName: "React Unity WebGL Tests",
   companyName: "Jeffrey Lanters",
 
-  loaderUrl: "../../../unity/switch/Switch.loader.js",
-  dataUrl: "../../../unity/switch/Switch.data",
-  frameworkUrl: "../../../unity/switch/Switch.framework.js",
-  codeUrl: "../../../unity/switch/Switch.wasm",
+  loaderUrl: "../../../unity/switch/Webgl.loader.js",
+  dataUrl: "../../../unity/switch/Webgl.data",
+  frameworkUrl: "../../../unity/switch/Webgl.framework.js",
+  codeUrl: "../../../unity/switch/Webgl.wasm",
 
 });
 
 function Switch() {
   useEffect(function () {
-    unityContext.on("GameOver1", function (username, score) {
+    unityContext.on("GameOver1", function (username) {
       console.log("QUITTED = " + username)
-      console.log("YEAHHHH", score)
+      // console.log("YEAHHHH", score)
     });
   }, []);
 
